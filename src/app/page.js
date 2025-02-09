@@ -34,7 +34,7 @@ export default function Home() {
                   alt="Example Image"
                   width={450}
                   height={450}
-                  style={{ position: "absolute", top: "40px", left: "30px" }}
+                  style={{ position: "absolute", top: "40px", left: "30px", mixBlendMode:"lighten" }}
                 />
 
             </div>
