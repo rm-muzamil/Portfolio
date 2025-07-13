@@ -1,6 +1,9 @@
 import AnimatedSection from "../components/AnimatedSection";
 import TrueFocus from "./TrueFocus";
 import RotatingText from "./RotatingText";
+import Image from "next/image";
+import Profile from "@/components/Profile";
+// import ProfileImage from "../components/ProfileImage";
 
 export default function About() {
   return (
@@ -57,8 +60,9 @@ export default function About() {
             and production-ready websites.
           </div>
         </div>
-        <div>
-          <h3>image</h3>
+        <div className="mt-[-5rem]">
+          {/* <Image src="/rm.png" width={450} height={450} /> */}
+          <Profile />
         </div>
       </section>
     </AnimatedSection>

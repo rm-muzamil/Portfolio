@@ -42,7 +42,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed flex justify-between top-0 left-0 w-full p-4 z-50 shadow backdrop-blur-md">
-      <div className="flex justify-between w-full mx-[10rem]">
+      <div className="flex justify-between w-full mx-[10rem] z-50">
         {/* Logo */}
         <Link href={"/"}>
           <div className="flex justify-center gap-[.5rem] text-2xl rounded-[4rem] h-[3rem] items-center w-[15rem] opacity-80 cursor-pointer">
@@ -53,12 +53,12 @@ export default function Navbar() {
         </Link>
 
         {/* Nav Buttons */}
-        <div className="flex justify-center gap-[2rem] rounded-[4rem] h-[3rem] w-[30rem] bg-gray-800 opacity-80 px-4">
+        <div className="flex justify-center gap-[2rem] z-50 rounded-[4rem] h-[3rem] w-[30rem] bg-gray-800 opacity-80 px-4">
           {sections.map((section) => (
             <button
               key={section}
               onClick={() => scrollToSection(section)}
-              className={`text-white px-4 py-1 rounded-full transition duration-300 hover:bg-violet-600 ${
+              className={`text-white px-4 py-1 z-50 rounded-full transition duration-300 hover:bg-violet-600 ${
                 activeSection === section ? "bg-violet-500 font-semibold" : ""
               }`}
             >
