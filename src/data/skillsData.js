@@ -1,5 +1,5 @@
 // src/data/skillsData.js
-import { label } from "framer-motion/client";
+// import { label } from "framer-motion/client";
 import {
   SiHtml5,
   SiCss3,

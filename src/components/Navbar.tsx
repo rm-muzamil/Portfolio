@@ -69,7 +69,7 @@ export default function Navbar() {
 
         {/* Github Profile */}
         <Link href={"https://github.com/rm-muzamil"} target="_blank">
-          <div className="flex justify-center items-center rounded-[4rem] h-[3rem] w-[10rem] bg-gradient-to-bl from-violet-500 to-fuchsia-500 opacity-90 text-white font-medium hover:opacity-100 transition duration-300 cursor-pointer">
+          <div className="flex justify-center items-center rounded-[4rem] h-[3rem] w-[10rem] bg-gradient-to-bl from-violet-700 to-fuchsia-600 opacity-90 text-white font-medium hover:opacity-100 transition duration-300 cursor-pointer">
             Github Profile
           </div>
         </Link>

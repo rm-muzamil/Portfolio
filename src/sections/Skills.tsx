@@ -12,7 +12,7 @@ export default function Skills() {
     >
       <section
         id="skills"
-        className="min-h-screen flex flex-col items-center justify-center text-white"
+        className="min-h-screen flex flex-col items-center justify-center text-white bg-gray-900"
       >
         <h2 className="text-5xl font-bold m-2">Skills</h2>
         <h3 className="mb-[3rem]">
