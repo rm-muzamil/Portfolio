@@ -6,6 +6,17 @@
 // }));
 export const projects = [
   {
+    image: "/projects-screenshort/banking-web-app.png",
+    skills: ["Next Js", "NextAuth", "Tailwind CSS"],
+    title: "NextBank – Modern Banking Web Application",
+    description:
+      "A secure and responsive banking web application built with Next.js, MongoDB, and NextAuth, featuring JWT authentication, role-based access, and real-time transaction management.The system allows admins to manage users and perform transfers, while customers can check balances, view transaction history, and send funds securely. Designed with a clean UI for an intuitive banking experience.",
+    link: [
+      "https://github.com/rm-muzamil/Banking-Web-App",
+      "https://banking-web-app-tau.vercel.app/",
+    ],
+  },
+  {
     image: "/projects-screenshort/project-1(e-commerce).png",
     skills: ["React Js", "Node Js", "Express Js", "Tailwind CSS"],
     title: "E-Commerce Web App",

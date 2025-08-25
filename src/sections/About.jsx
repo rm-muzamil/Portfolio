@@ -17,7 +17,7 @@ export default function About() {
     >
       <section
         id="about"
-        className="mt-[10rem] h-screen flex justify-between mx-[10rem] text-white text-4xl"
+        className="mt-[10rem] h-screen flex flex-wrap-reverse md:flex-nowrap justify-between mx-[10rem] text-white text-4xl"
       >
         <div className="max-w-[40rem]">
           <h2>HI, I'm</h2>

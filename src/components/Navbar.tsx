@@ -41,7 +41,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed flex justify-between top-0 left-0 w-full p-4 z-50 shadow backdrop-blur-md">
+    <nav className="fixed md:flex hidden justify-between top-0 left-0 w-full p-4 z-50 shadow backdrop-blur-md">
       <div className="flex justify-between w-full mx-[10rem] z-50">
         {/* Logo */}
         <Link href={"/"}>
