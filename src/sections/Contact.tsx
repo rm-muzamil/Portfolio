@@ -17,7 +17,7 @@ export default function Contact() {
       >
         <h2 className="text-4xl font-bold mb-4">Contact Me</h2>
         <p className="mb-4 text-lg text-center max-w-lg">
-          Let’s connect! I'm available for work and collaboration.
+          Let&apos;s connect! I&apos;m available for work and collaboration.
         </p>
 
         <ContactForm />

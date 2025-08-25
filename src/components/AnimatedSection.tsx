@@ -1,14 +1,16 @@
 "use client";
-import { motion, useAnimation, useInView } from "framer-motion";
+import { motion, useAnimation, useInView, Variants } from "framer-motion";
 import { useEffect, useRef } from "react";
+
+interface AnimatedSectionProps {
+  children: React.ReactNode;
+  variants: Variants;
+}
 
 export default function AnimatedSection({
   children,
   variants,
-}: {
-  children: React.ReactNode;
-  variants: any;
-}) {
+}: AnimatedSectionProps) {
   const controls = useAnimation();
   const ref = useRef(null);
   const inView = useInView(ref, { amount: 0.4 });

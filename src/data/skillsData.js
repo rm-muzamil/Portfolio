@@ -19,7 +19,6 @@ import {
   SiCplusplus,
   SiGit,
   SiGithub,
-  SiVsco,
   SiVercel,
   SiPostman,
   SiFigma,
