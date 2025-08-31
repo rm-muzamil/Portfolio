@@ -4,7 +4,7 @@ import Projects from "@/sections/Projects";
 import Contact from "@/sections/Contact";
 import Navbar from "@/components/Navbar";
 
-export default function Home() {
+export default async function Home() {
   return (
     <main className="space-y-0">
       <Navbar />
