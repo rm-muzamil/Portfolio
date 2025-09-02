@@ -1,65 +1,60 @@
-/* styles/Profile.css */
-
-.profile-container {
+/* Base container */
+.profile-bg {
   position: relative;
-  width: 30rem;
-  height: 30rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.profile-container {
+  
+  position: relative;
+  width: 80vw; /* relative to viewport width */
+  max-width: 30rem; /* limit on large screens */
+  aspect-ratio: 1 / 1; /* keeps it perfectly square */
   border-radius: 50%;
   background-color: #0d1117;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  margin: auto;
 }
 
+/* Animated border */
 .profile-container::before {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    border-radius: 50%;
-    background: conic-gradient(from 0deg, #00ffff, #ff00ff, #00ffff);
-    z-index: 0;
-    animation: rotate 2s linear infinite;
+  
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, #00ffff, #ff00ff, #00ffff);
+  z-index: 0;
+  animation: rotate 2s linear infinite;
 }
-.profile-container::after {
-    background-color: red;
-}
-.profile-bg{
-    
-    background-color: #0d1117;
-    border-radius: 50%;
-    z-index: 1;
-}
+
+/* Image inside container */
 .profile-image {
-    position: relative;
-    width: 29.8rem;
-    height: 29.8rem;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #0d1117;
-    z-index: 1;
-    transition: 1s;
+
+  background-color: #0d1117;
+  position: relative;
+  /* position: fixed; */
+  width: 99%; /* instead of fixed rem */
+  height: 99%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0d1117;
+  z-index: 1;
+  transition: transform 1s ease;
 }
+
 .profile-image:hover {
-    position: relative;
-    width: 35.5rem;
-    height: 35.5rem;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #0d1117;
-    background-color: rgb(31, 31, 31);
-    /* z-index: 1; */
-    transition: 1s;
-     /* background: conic-gradient(from 0deg, #00ffff, #ff00ff, #00ffff); */
-
-}
-.profile-image::after {
-    background-color: red;
+  transform: scale(1.15); /* smooth enlarge instead of fixed size */
 }
 
+/* Background lines */
 .background-lines {
   position: fixed;
   top: 0;
@@ -78,6 +73,7 @@
   z-index: -1;
 }
 
+/* Animations */
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -93,5 +89,30 @@
   }
   to {
     background-position: 0% 0%;
+  }
+}
+
+/* ✅ RESPONSIVE MEDIA QUERIES */
+@media (max-width: 768px) {
+  .profile-container {
+    width: 60vw; /* smaller screens */
+    max-width: 20rem;
+  }
+
+  .profile-image {
+    width: 99%;
+    height: 99%;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    width: 70vw;
+    max-width: 15rem;
+  }
+
+  .profile-image {
+    width: 99%;
+    height: 99%;
   }
 }

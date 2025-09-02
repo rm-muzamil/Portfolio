@@ -8,13 +8,7 @@ export default function Profile() {
       <div className="background-lines" />
       <div className="profile-container">
         <div className="profile-bg">
-          <Image
-            src="/rm.png"
-            width={100}
-            height={100}
-            alt="Profile"
-            className="profile-image"
-          />
+          <img src="/rm.png" alt="Profile" className="profile-image" />
         </div>
       </div>
     </>

@@ -45,18 +45,4 @@ export const projects = [
     description: "Project '1'",
     link: ["https://www.youtube.com", "www.google.com"],
   },
-  {
-    image: "/projects-screenshort/p1.png",
-    skills: ["s1"],
-    title: "Project 1",
-    description: "Project '1'",
-    link: ["https://www.youtube.com", "www.google.com"],
-  },
-  {
-    image: "/projects-screenshort/p1.png",
-    skills: ["s1"],
-    title: "Project 1",
-    description: "Project '1'",
-    link: ["", ""],
-  },
 ];

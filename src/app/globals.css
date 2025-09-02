@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient(-45deg, #ff5e00, #330640, #1b0132, #bfff00);
+  background: var(--gradient-background);
   background-size: 400% 400%;
   animation: gradientBackground 15s ease infinite;
 }
@@ -15,6 +15,7 @@ body {
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --gradient-background: linear-gradient(-45deg, #ff5e00, #330640, #1b0132, #bfff00);
 }
 
 @theme inline {
