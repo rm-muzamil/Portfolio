@@ -1,7 +1,7 @@
 import AnimatedSection from "../components/AnimatedSection";
 import TrueFocus from "./TrueFocus";
 import RotatingText from "./RotatingText";
-import Image from "next/image";
+
 import Profile from "@/components/Profile";
 // import ProfileImage from "../components/ProfileImage";
 
