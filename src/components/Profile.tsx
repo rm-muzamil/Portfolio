@@ -1,5 +1,5 @@
 // components/Profile.tsx
-import Image from "next/image";
+
 import "../../styles/Profile.css";
 
 export default function Profile() {

@@ -1,5 +1,4 @@
 import { motion, AnimatePresence } from "framer-motion";
-import Link from "next/link";
 
 export default function ProjectModal({ isOpen, onClose, project }) {
   if (!project) return null;
