@@ -47,7 +47,7 @@ export default function Navbar() {
 
   return (
     <div className="flex flex-col ">
-      <nav className="fixed flex  justify-between items-center top-0 left-0 w-full p-4 z-50 shadow backdrop-blur-md">
+      <nav className="fixed flex justify-between items-center top-0 left-0 w-full p-4 z-50 shadow backdrop-blur-md">
         <div className="flex justify-between md:w-full md:mx-[10rem] z-50">
           {/* Logo */}
           <Link href={"/"}>
@@ -105,7 +105,10 @@ export default function Navbar() {
         {sections.map((section) => (
           <button
             key={section}
-            onClick={() => scrollToSection(section)}
+            onClick={() => {
+              scrollToSection(section);
+              setIsNavVisible(false);
+            }}
             className={`text-white px-4 py-1 z-50 rounded-full transition duration-300 hover:bg-violet-600 ${
               activeSection === section ? "bg-violet-500 font-semibold" : ""
             }`}

@@ -40,7 +40,7 @@ export default function About() {
                 "Programmmer",
                 "Software Engineer",
               ]}
-              mainClassName="px-2 md:text-3xl text-[1rem] font-bold sm:px-2 md:px-3 text-violet-500 overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+              mainClassName="px-2 md:text-3xl text-[1.5rem] font-bold sm:px-2 md:px-3 text-violet-500 overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
               staggerFrom={"last"}
               initial={{ y: "100%" }}
               animate={{ y: 0 }}

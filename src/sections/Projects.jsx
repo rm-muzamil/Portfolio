@@ -18,13 +18,13 @@ export default function ProjectsHorizontalScroll() {
   const x = useTransform(
     scrollYProgress,
     [0, 1],
-    ["0%", `-${(projects.length - 1) * 10}%`]
+    ["10%", `-${(projects.length - 1) * 30}%`]
   );
 
   return (
     <section
       ref={sectionRef}
-      className="relative h-[500vh] text-white clip-slan bg-gradient-to-b from-[#330640] to-[#1b0132]"
+      className="relative h-[1000vh] text-white clip-slan bg-gradient-to-b from-[#330640] to-[#1b0132]"
       id="projects"
     >
       {/* Scrollable cards */}
