@@ -77,7 +77,7 @@ export default function Navbar() {
           {/* Github Profile */}
           <Link
             className="hidden md:flex"
-            href={"https://github.com/rm-muzamil"}
+            href={"https://github.com/rm-muzammil"}
             target="_blank"
           >
             <div className="flex justify-center items-center rounded-[4rem] h-[3rem] w-[10rem] bg-gradient-to-bl from-violet-700 to-fuchsia-600 opacity-90 text-white font-medium hover:opacity-100 transition duration-300 cursor-pointer">
@@ -95,7 +95,7 @@ export default function Navbar() {
         </button>
       </nav>
       <div
-        className={`md:hidden z-50 fixed left-0 right-0 top-[5rem] w-full bg-black/70 flex flex-col gap-[2rem] py-[2rem] items-center transform transition-all duration-300 ease-in-out
+        className={`md:hidden z-50 fixed left-0 right-0 top-[5rem] w-full bg-black/80 flex flex-col gap-[2rem] py-[2rem] items-center transform transition-all duration-300 ease-in-out
     ${
       isNavVisible
         ? "opacity-100 translate-y-0 pointer-events-auto"
@@ -116,6 +116,15 @@ export default function Navbar() {
             {section.charAt(0).toUpperCase() + section.slice(1)}
           </button>
         ))}
+        <Link
+          className=""
+          href={"https://github.com/rm-muzammil"}
+          target="_blank"
+        >
+          <div className="flex justify-center items-center rounded-[4rem] h-[3rem] w-[10rem] bg-gradient-to-bl from-violet-700 to-fuchsia-600 opacity-90 text-white font-medium hover:opacity-100 transition duration-300 cursor-pointer">
+            Github Profile
+          </div>
+        </Link>
       </div>
     </div>
   );
